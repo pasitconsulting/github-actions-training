@@ -22,4 +22,3 @@ jobs:
 
     - name: Retrieve Variable
       run: echo "${{ vars.MY_VAR }}"
-run-name: "My custom workflow run name - ${{ RUNNER.OS }}"
