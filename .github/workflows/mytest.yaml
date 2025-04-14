@@ -1,6 +1,9 @@
 name: test
 on:
   workflow_dispatch:
+    inputs:
+        bob:
+          required: false
 
 jobs:
   smoke-test:
