@@ -1,0 +1,10 @@
+name: test
+on:
+  workflow_dispatch:
+
+jobs:
+  smoke-test:
+    runs-on:
+    steps:
+      - name: test
+        run: echo "hellow world"
