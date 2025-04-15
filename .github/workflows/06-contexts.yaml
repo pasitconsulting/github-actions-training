@@ -30,4 +30,4 @@ jobs:
     - name: Retrieve Variable
       run: echo "${{ vars.MY_VAR }}"
 
-    - name: Print Env Variables
+
