@@ -23,4 +23,4 @@ jobs:
 
       - name: I will execute when cancelled
         if: ${{ cancelled() }}
-        run: 
+        run: "I will execute when cancelled"
