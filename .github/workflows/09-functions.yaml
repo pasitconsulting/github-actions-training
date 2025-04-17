@@ -13,7 +13,7 @@ jobs:
       - name: Print PR labels
         run: ${{ toJSON(github.event.pull_request.labels) }}
       - name: Bug step
-        if: ${{ failure() && !cancelled() && contains(github.event.pull_request.title,"fix") }}
+        if: ${{ failure() && !cancelled() && contains(github.event.pull_request.title,fix) }}
         run: echo "I am a bug fix"
 
       - name: sleep for 20 seconds
