@@ -1,6 +1,5 @@
 name: 09 - Using Functions
 on:
-  pull_request:
   workflow_dispatch:
 jobs:
   echo1:
@@ -8,7 +7,7 @@ jobs:
     steps:
 
       - name: Print PR title
-        run: echo ${{ github.event.pull_request.title }}
+        run: echo "${{ github.event.pull_request.title }}"
 
       - name: Print PR labels
         run: echo "${{ toJSON(github.event.pull_request.labels) }}"
@@ -17,8 +16,8 @@ jobs:
         if: ${{ failure() && !cancelled() && contains(github.event.pull_request.title, 'fix') }}
         run: echo "I am a bug fix"
 
-      - name: sleep for 20 seconds
-        run: sleep 20
+#      - name: sleep for 20 seconds
+#        run: sleep 20
 
       - name: Failing step
         run: exit 1
