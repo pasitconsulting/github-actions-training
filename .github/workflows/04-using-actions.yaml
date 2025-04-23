@@ -15,4 +15,3 @@ jobs:
       run: |
         cd .github/04-using-actions/react-app/
         npm ci
-      
