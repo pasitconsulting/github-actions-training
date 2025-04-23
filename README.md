@@ -1,1 +1,1 @@
-# github-actions-training - STUFFED
+# github-actions-training
