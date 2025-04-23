@@ -1,4 +1,4 @@
-name: 09 - Using Functions - tesst
+name: 09 - Using Functions
 on:
   workflow_dispatch:
 
